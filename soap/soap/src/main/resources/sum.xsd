@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.baeldung.com/springsoap/gen"
+           targetNamespace="http://www.baeldung.com/springsoap/gen" elementFormDefault="qualified">
+
+    <xs:element name="getSumRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="zahl1" type="xs:int"/>
+                <xs:element name="zahl2" type="xs:int"/>
+                <xs:element name="zahl3" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getSumResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="summe" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
